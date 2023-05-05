@@ -18,7 +18,8 @@ ingress:
   enabled: false
   annotations: {}
   hosts:
-    - host: k8s-default-myingres-60c851a24e-782417590.ap-south-1.elb.amazonaws.com
+    # - host: k8s-default-myingres-60c851a24e-782417590.ap-south-1.elb.amazonaws.com
+    - host: chart-example.local
       paths: []
   tls: []
 resources: {}
