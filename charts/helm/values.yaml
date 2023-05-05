@@ -1,8 +1,8 @@
 replicaCount: 5
 image:
   pullPolicy: IfNotPresent
-  repository: 651010102653.dkr.ecr.ap-southeast-1.amazonaws.com/argoeks
-  version: main-c7c2c79
+  repository: public.ecr.aws/h3o4k0u5/argoeks
+  version: latest
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -18,7 +18,7 @@ ingress:
   enabled: false
   annotations: {}
   hosts:
-    - host: chart-example.local
+    - host: k8s-default-myingres-60c851a24e-782417590.ap-south-1.elb.amazonaws.com
       paths: []
   tls: []
 resources: {}
